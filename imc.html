@@ -13,7 +13,6 @@
 
         function imcCalc(peso, altura){
             var imc = Math.round(peso / (altura * altura));
-            printf("O imc é : " + imc);
             if (imc <= 18.5) {
                 alert("Abaixo do peso");
             }
@@ -32,24 +31,22 @@
             else if (imc > 40) {
                 alert("OB 3");
             }
+            return imc;
         }
     </script>
 
     <script>
         // usuário
-        var peso = 80;
-        var altura = 1.64;
-        imcCalc(peso, altura);
+        var ImcUsuario = imcCalc(80, 1.64);
+        printf("O imc do usuário é: " + ImcUsuario);
 
         //amigo
-        var peso = 76
-        var altura = 1.75
-        imcCalc(peso, altura);
+        var ImcAmigo = imcCalc(76, 1.75);
+        printf("O imc do amigo é: " + ImcAmigo);
 
         //parente
-        var peso = 95
-        var altura = 1.85
-        imcCalc(peso, altura);
+        var ImcParente = imcCalc(95, 1.85);
+        printf("O imc do parente é: " + ImcParente);
     </script>
 
 </HTML>
