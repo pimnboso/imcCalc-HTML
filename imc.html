@@ -37,16 +37,23 @@
 
     <script>
         // usuário
-        var ImcUsuario = imcCalc(80, 1.64);
+        var pesoU = prompt("Informe o Peso do usuário");
+        var alturaU = prompt("Informe a Altura do usuário");
+        var ImcUsuario = imcCalc(pesoU, alturaU);
         printf("O imc do usuário é: " + ImcUsuario);
 
         //amigo
-        var ImcAmigo = imcCalc(76, 1.75);
+        var pesoA = prompt("Informe o Peso do amigo");
+        var alturaA = prompt("Informe a Altura do amigo");
+        var ImcAmigo = imcCalc(pesoA, alturaA);
         printf("O imc do amigo é: " + ImcAmigo);
 
         //parente
-        var ImcParente = imcCalc(95, 1.85);
+        var pesoP = prompt("Informe o Peso do parente");
+        var alturaP = prompt("Informe a altura do parente");
+        var ImcParente = imcCalc(pesoP, alturaP);
         printf("O imc do parente é: " + ImcParente);
+        
     </script>
 
 </HTML>
